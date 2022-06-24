@@ -10,6 +10,6 @@ form.addEventListener("submit", (event) => {
     return alert("Заполните все поля пожалуйста");
   }
 
-  console.log(`Email: ${email.value}, Password: ${password.value}`);
+  console.log({ email: email.value, password: password.value });
   event.currentTarget.reset();
 });
